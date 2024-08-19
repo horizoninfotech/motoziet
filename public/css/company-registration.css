@@ -1,0 +1,202 @@
+.company-registration{
+    background: transparent !important;
+    font-family: "Anek Devanagari", sans-serif;
+   
+}
+.company-registration .container{
+    background: transparent !important; 
+}
+
+.select2-container {
+    width: 100% !important; /* Ensure the select2 container takes up full width */
+}
+
+.shadow-sm{
+    background: transparent !important; 
+    border: unset;
+}
+.card-header{
+    background: transparent !important;
+    border: unset;
+}
+.company-registration .card-body {
+    backdrop-filter: blur(10px);
+    background-color: rgba(0, 0, 0, 0.6); /* Darker overlay for better contrast */
+    border-radius: 15px; /* More rounded corners */
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow for depth */
+}
+
+/* Improved input styles */
+.company-registration input[type="text"],
+.company-registration input[type="password"],
+.company-registration input[type="email"] {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 0;
+    border-bottom: 2px solid #fff; /* Slightly thicker border */
+    outline: none;
+    box-shadow: none !important;
+    border-radius: 0;
+    padding: 10px 5px;
+    font-size: 16px;
+    width: 100%;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.company-registration input[type="text"]:focus,
+.company-registration input[type="password"]:focus,
+.company-registration input[type="email"]:focus {
+    border-bottom: 2px solid #fff; /* Change border color on focus */
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); /* Add subtle glow effect on focus */
+}
+
+/* Enhanced select dropdown styling, including Select2 */
+.company-registration select {
+    background-color: transparent !important;
+    color: #fff !important;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    border-radius: 0;
+    padding: 10px 5px;
+    font-size: 16px;
+    width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23fff" d="M2 0L0 2h4L2 0zM2 5L0 3h4L2 5z"/></svg>'); /* Custom dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select2-container--default .select2-selection--single {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 2px solid #fff !important;
+    border-radius: 0 !important;
+    color: #fff !important;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+    box-shadow: none !important;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    right: 10px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    color: #fff !important;
+}
+
+.select2-dropdown {
+    background-color: #000 !important; /* Dark background for dropdown */
+    color: #fff !important; /* White text for options */
+    
+}
+
+.company-registration select:focus,
+.select2-container--default .select2-selection--single:focus {
+    border-bottom: 2px solid #007bff !important; /* Change border color on focus */
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.3); /* Add subtle glow effect on focus */
+}
+
+/* Button styles */
+.company-registration button[type="submit"] {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(235, 12, 12);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition effects */
+}
+
+.company-registration .fa{
+    color: white !important;
+}
+
+.company-registration button[type="submit"]:hover {
+    background-color: rgba(0, 0, 0, 0.9); /* Darker blue on hover */
+    transform: translateY(-2px); /* Slightly raise the button on hover */
+    color: white;
+}
+
+.company-registration button[type="submit"]:active {
+    transform: translateY(1px); /* Slightly press the button on click */
+}
+
+@media (max-width: 768px) {
+    .company-registration .card-body {
+        padding: 20px;
+         
+    }
+
+    .company-registration input[type="text"],
+    .company-registration input[type="password"],
+    .company-registration input[type="email"],
+    .company-registration select,
+    .select2-container--default .select2-selection--single {
+        font-size: 14px;
+        padding: 8px 5px;
+    
+    }
+
+    .company-registration button[type="submit"] {
+        font-size: 16px;
+        padding: 10px 15px;
+         
+    }
+}
+
+@media (max-width: 576px) {
+    .company-registration .card-body {
+        padding: 15px;
+    }
+
+    .company-registration input[type="text"],
+    .company-registration input[type="password"],
+    .company-registration input[type="email"],
+    .company-registration select,
+    .select2-container--default .select2-selection--single {
+        font-size: 13px;
+        padding: 7px 5px;
+         
+
+    }
+
+    .company-registration button[type="submit"] {
+        font-size: 14px;
+        padding: 8px 12px;
+        
+    }
+}
+
+.select2-container .select2-selection--single {
+    height: unset !important;
+   
+}
+
+
+.company-registration ::placeholder {
+    color: white !important;
+    opacity: 1; /* Firefox */
+  
+}
+
+.company-registration .card-header h3 {
+    color: #000;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.6); /* Subtle blur shadow */
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    backdrop-filter: blur(2px); /* Adds a slight blur behind the text */
+    margin-bottom: 20px;
+     
+}
